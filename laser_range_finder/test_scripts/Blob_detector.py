@@ -1,4 +1,4 @@
-#!/bin/usr/env Python2.7
+
 import cv2
 import numpy as np
 
@@ -27,7 +27,7 @@ def getBlobDetector():
 
 print(cv2.__version__)
 
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(1)
 print(cap.isOpened())
 detector = getBlobDetector()
 caminit(cap)
