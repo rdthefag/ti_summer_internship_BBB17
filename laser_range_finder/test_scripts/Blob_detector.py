@@ -15,14 +15,14 @@ def invert_color(frame):
 def getBlobDetector():
     params = cv2.SimpleBlobDetector_Params()
     params.filterByArea = True
-    params.minArea = 0.1
+    params.minArea = 0.01
     params.maxArea = 350
     params.filterByCircularity = True
-    params.minCircularity = 0.9
+    params.minCircularity = 0.95
     params.filterByConvexity = True
     params.minConvexity = 0.87
     params.filterByInertia = True
-    params.minInertiaRatio = 0.01
+    params.minInertiaRatio = 0.1
     return cv2.SimpleBlobDetector(params)
 
 print(cv2.__version__)

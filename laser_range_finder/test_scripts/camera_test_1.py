@@ -9,7 +9,7 @@ import cv2
 
 print(cv2.__version__)
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 caminit(cap)
 print("Press any key to skip")
 while (True):
