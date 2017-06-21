@@ -1,7 +1,7 @@
 import Adafruit_BBIO.ADC as ADC  
 import time  
 import httplib, urllib  
-sensor_pin = 'P9_35'  
+sensor_pin = 'P9_37'  
 ADC.setup()  
 print('Reading\t\tVolts')  
 while True:  
